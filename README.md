@@ -60,3 +60,6 @@ To measure box coverage automatically, I drew rough outlines of the three fruits
 Next step: run it, read it line by line, and ask about anything you couldn't explain on your own. After that, the team reads it together and holds the What-if prediction meeting.
 
 Status updated: Task 1 v1 recorded with method, thresholds and ranges; code saved to claude/code/Task1.py; Python noted as a working assumption; session log updated.
+
+
+https://claude.ai/artifact/J6W5fRfCkD38cVoaPGWb34
