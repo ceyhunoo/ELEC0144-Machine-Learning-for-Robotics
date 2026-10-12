@@ -36,7 +36,7 @@ MEDIAN_SIZE      = 7      # median filter window, 7 x 7 pixels (1 - 11 give almo
 
 
 # %% Functions
-def median_filter(I, n):
+def median_filter(I: np.ndarray, n: int) -> np.ndarray:
     """Median of the n x n neighbourhood of every pixel (lecture slides 50-54).
     In:  I, 2-D array; n, odd window size.  Out: filtered array, same size as I.
     Border pixels are repeated outwards so the output keeps the input size."""
@@ -48,7 +48,7 @@ def median_filter(I, n):
     return np.median(shifts, axis=0)
 
 
-def label_blobs(mask):
+def label_blobs(mask: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
     """Give every connected region (blob) of True pixels its own number (lecture slide 82).
     In:  mask, 2-D boolean array.
     Out: labels, same size, 0 = background, 1, 2, ... = blob number;

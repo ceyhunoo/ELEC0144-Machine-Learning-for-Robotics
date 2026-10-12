@@ -2,6 +2,18 @@
 
 ## SECTION A
 
+### Running the code
+
+Run 
+```
+uv sync
+```
+If it fails, install uv first (Look online on how to do that)
+
+### Further Explanation
+
+Further explanation can be found here: https://claude.ai/artifact/J6W5fRfCkD38cVoaPGWb34
+
 ### How it works, and why each choice
 
 1. **Darken and mirror.** The image is darkened with `floor(k·I + 0.5)` and then flipped.
@@ -62,4 +74,3 @@ Next step: run it, read it line by line, and ask about anything you couldn't exp
 Status updated: Task 1 v1 recorded with method, thresholds and ranges; code saved to claude/code/Task1.py; Python noted as a working assumption; session log updated.
 
 
-https://claude.ai/artifact/J6W5fRfCkD38cVoaPGWb34
