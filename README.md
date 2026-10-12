@@ -2,7 +2,7 @@
 
 ## SECTION A
 
-## How it works, and why each choice
+### How it works, and why each choice
 
 1. **Darken and mirror.** The image is darkened with `floor(k·I + 0.5)` and then flipped.
    - The brief says "rounded", and this matches MATLAB's `round`.
