@@ -80,6 +80,9 @@ Next step: run it, read it line by line, and ask about anything you couldn't exp
 
 ## SECTION B
 
+### Further Explanation
+Further explanation can be found here: https://claude.ai/artifact/DntJYyHRzgxuJMJ4YEuyRN
+
 ### What Task2.py does
 
 It trains a 1-3-1 network (1 input, 3 hidden tanh nodes, 1 linear output) on the 41 samples in `RegressionData.csv`. It trains twice, both times from the starting weights in `InitialWeights.npz`:
