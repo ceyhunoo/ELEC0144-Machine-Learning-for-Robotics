@@ -2,7 +2,7 @@
 
 ## Running the code
 
-Run 
+Run the following command to install dependencies (numpy and matplotlib)
 ```
 uv sync
 ```
@@ -19,7 +19,10 @@ Both files read their data with relative paths, so run them from this folder. Ta
 
 ### Further Explanation
 
-Further explanation can be found here: https://claude.ai/artifact/J6W5fRfCkD38cVoaPGWb34
+Further explanation can be found here
+Task 1: https://claude.ai/artifact/J6W5fRfCkD38cVoaPGWb34
+Task 2: https://claude.ai/artifact/DntJYyHRzgxuJMJ4YEuyRN
+Write the report here: https://liveuclac-my.sharepoint.com/:w:/g/personal/zceeoco_ucl_ac_uk/IQD89-RHi47LT59jtEdv2QnKAR8AL53yXJabnwArH38i8rI?e=PYnsxl
 
 ### How it works, and why each choice
 
