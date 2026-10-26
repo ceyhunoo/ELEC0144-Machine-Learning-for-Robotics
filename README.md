@@ -149,20 +149,34 @@ These are what the assessor looks at during the viva: does the fit follow the da
 
 The lines of `forward`, `gradients` and `train` are labelled with these equation numbers in the code comments. The appendix should use the same numbers.
 
+**Notation (Week 3 lecture).** A delta is the local gradient δ = −∂E/∂v of a node, the same sign as slides 53, 70 and 74. So every gradient is −δ × (input to that weight), and the SGD step w − η·∂E/∂w is the lecture's w + η·δ·x_out. The lecture's general hidden delta is (Σ_k δ_k·w_jk)·φ′(v_j); with one output node the sum has one term, which is eq. 9. The lecture calls the loss L; the brief and our code call it E. Our symbols map to the lecture's (layer s = 1 hidden, s = 2 output; w⁽ˢ⁾ᵢⱼ goes from node i to node j, i = 0 is the bias):
+
+| Ours (code) | Lecture |
+|---|---|
+| x | x⁽⁰⁾_out,1 |
+| `W1[j]`, `b1[j]` | w⁽¹⁾₁ⱼ, w⁽¹⁾₀ⱼ |
+| `v1[j]`, `a1[j]` | v⁽¹⁾ⱼ, x⁽¹⁾_out,j |
+| `W2[j]`, `b2` | w⁽²⁾ⱼ₁, w⁽²⁾₀₁ |
+| v_o, y | v⁽²⁾₁, y₁ |
+| `delta_o`, `delta_h[j]` | δ⁽²⁾₁, δ⁽¹⁾ⱼ (slide 74: δₒ, δₕ) |
+| `slope[j]` | ∂φ⁽¹⁾/∂v⁽¹⁾ⱼ |
+
+Code indices j run 0–2; the maths numbers the hidden nodes 1–3.
+
 | Eq. | Maths | Code |
 |---|---|---|
 | 1 | v_j = W1_j·x + b1_j | `v1 = W1 * x + b1` |
 | 2 | a_j = tanh(v_j) | `a1 = np.tanh(v1)` |
-| 3 | y = Σ_j W2_j·a_j + b2 | `y = (W2 @ a1 + b2).item()` |
+| 3 | y = v_o = Σ_j W2_j·a_j + b2 | `y = (W2 @ a1 + b2).item()` |
 | 4 | E = ½(d − y)² | `gradients` docstring; used in the gradient check |
-| 5 | δ_o = d − y | `delta_o = d - y` |
+| 5 | δ_o = −∂E/∂v_o = d − y | `delta_o = d - y` |
 | 6 | ∂E/∂W2_j = −δ_o·a_j | `gW2 = -delta_o * a1.T` |
 | 7 | ∂E/∂b2 = −δ_o | `gb2 = -delta_o * np.ones((1, 1))` |
 | 8 | tanh′(v_j) = 1 − a_j² | `slope = 1 - a1**2` |
-| 9 | δ_j = W2_j·δ_o·(1 − a_j²) | `delta_h = W2.T * delta_o * slope` |
+| 9 | δ_j = −∂E/∂v_j = W2_j·δ_o·(1 − a_j²) | `delta_h = W2.T * delta_o * slope` |
 | 10 | ∂E/∂W1_j = −δ_j·x | `gW1 = -delta_h * x` |
 | 11 | ∂E/∂b1_j = −δ_j | `gb1 = -delta_h` |
-| 12 | w ← w − η·∂E/∂w | `params[k] -= eta * g[k]` |
+| 12 | w ← w − η·∂E/∂w = w + η·δ·input | `params[k] -= eta * g[k]` |
 | 13 | m ← β₁m + (1 − β₁)g, v ← β₂v + (1 − β₂)g² | `m[k] = ...`, `v[k] = ...` |
 | 14 | m̂ = m / (1 − β₁ᵗ), v̂ = v / (1 − β₂ᵗ) | `m_hat = ...`, `v_hat = ...` |
 | 15 | w ← w − α·m̂ / (√v̂ + ε) | `params[k] -= alpha * m_hat / (np.sqrt(v_hat) + eps)` |
@@ -189,7 +203,7 @@ At x = 0.5 (d = −0.0521) with the given weights:
 
 ### Things to decide or check
 
-- **Notation.** The code uses δ = d − y at the output and writes the gradients with a minus sign. Backprop is taught on Fri 23 Oct. If the slides define δ the other way round or use other symbols, rename the comments to match before the appendix is written, so that "which equation is this line?" has a direct answer.
+- **Notation.** Checked against the Week 3 lecture: same sign convention (δ = −∂E/∂v), mapping in the table above.
 - **ADAM form.** This is the standard version (Kingma and Ba), with bias correction and ε outside the square root. Check it against the lecture that covers ADAM.
 - **Two extras beyond the brief.** The Gradient check section, and ADAM's fit on the left panel (the brief only asks for SGD's). Each is one more thing someone can be asked about. Keep or drop them.
 - **Derivation appendix.** Required, at most 2 pages; a scan of handwritten work is fine. Use the equation numbers above.

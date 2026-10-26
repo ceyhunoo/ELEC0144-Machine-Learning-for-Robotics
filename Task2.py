@@ -14,7 +14,7 @@
 
 # %% Settings
 # Run from the folder that contains RegressionData.csv and InitialWeights.npz:  python Task2.py
-# Equation numbers (1)-(15) refer to the derivation in the report appendix.
+# Equations (1)-(15): derivation in the report appendix. delta = -dE/dv (local gradient), as in Week 3.
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -60,11 +60,11 @@ def gradients(x, d, W1, b1, W2, b2):
     In:  one sample and the current weights.
     Out: [dE/dW1, dE/db1, dE/dW2, dE/db2], each the same shape as its weight."""
     a1, y = forward(x, W1, b1, W2, b2)
-    delta_o = d - y                     # (5) output delta: error times slope of the linear output (= 1)
+    delta_o = d - y                     # (5) output delta = -dE/dv_o: error times slope of linear output (1)
     gW2 = -delta_o * a1.T               # (6) dE/dW2_j = -delta_o * a1_j          (1 x 3)
     gb2 = -delta_o * np.ones((1, 1))    # (7) dE/db2   = -delta_o                 (1 x 1)
     slope = 1 - a1**2                   # (8) slope of tanh at each hidden node   (3 x 1)
-    delta_h = W2.T * delta_o * slope    # (9) hidden delta: error passed back through W2, times slope
+    delta_h = W2.T * delta_o * slope    # (9) hidden delta = -dE/dv1: delta_o passed back through W2, times slope
     gW1 = -delta_h * x                  # (10) dE/dW1_j = -delta_h_j * x          (3 x 1)
     gb1 = -delta_h                      # (11) dE/db1_j = -delta_h_j              (3 x 1)
     return [gW1, gb1, gW2, gb2]
@@ -119,7 +119,7 @@ def train(method):
             g = gradients(x_train[i], d_train[i], *params)
             if method == 'SGD':
                 for k in range(4):
-                    params[k] -= eta * g[k]                                  # (12) SGD step
+                    params[k] -= eta * g[k]                                  # (12) SGD step = w + eta * delta * input
             else:
                 t += 1
                 for k in range(4):
