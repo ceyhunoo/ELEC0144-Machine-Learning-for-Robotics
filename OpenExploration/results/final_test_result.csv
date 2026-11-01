@@ -1,0 +1,2 @@
+n,correct,accuracy,cube,sponge,guess_low,guess_high,p_value
+40,30,0.75,0.5,1.0,0.35,0.65,0.0011107168866146822

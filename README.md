@@ -214,3 +214,50 @@ At x = 0.5 (d = −0.0521) with the given weights:
 - **What-if 2.** The factor to replace is `slope = 1 - a1**2` (eq. 8) in `gradients`. Nothing has been run with it changed. Each member writes their name, prediction and reason first. Then the change goes in a separate file, WhatIf_Task2.py.
 
 Next step: run it, read it next to the table above, and ask about any line you couldn't explain on your own. Then the team writes the appendix after the Week 3 lecture and holds the What-if 2 prediction meeting.
+
+## SECTION C
+
+### Open Exploration: running the code
+
+The videos go in `open exploration videos/` (next to this README, not in git). After `uv sync`, from the `OpenExploration` folder:
+```
+cd OpenExploration
+uv run python OE1_Grips.py         # cuts the 8 videos into 160 grips, draws the test member
+uv run python OE2_SessionCheck.py  # can the takes be told apart with no hand in view?
+uv run python OE3_Explore.py       # the attempts in the tree (training members only)
+uv run python FinalMethod.py       # final method on the test set, prints the result
+uv run python OE4_Extension.py     # Going further B: ablations on the test set
+```
+Run them in this order. The first run decodes the videos into `OpenExploration/cache/` (about 1.2 GB, about 2 minutes); after that each file takes under a minute. The cache can be deleted at any time and is rebuilt. Every number and figure in the report is written to `OpenExploration/results/`.
+
+### What is where
+
+| File | What it does |
+|---|---|
+| `oe_common.py` | shared functions: read a video, hand mask (skin colour), cube or sponge clip, cut into grips, the measures of a grip |
+| `OE1_Grips.py` | `results/grips.csv` (every grip: video, person, label, object, start and end frame, training or test), `counts.csv`, `cutting_robustness.csv`, two check figures |
+| `OE2_SessionCheck.py` | `results/session_check.csv`, `take_differences.csv` |
+| `OE3_Explore.py` | `results/tree_results.csv`: the validation number of every node |
+| `FinalMethod.py` | `results/final_test_result.csv`, `final_test_predictions.csv`, `fig_final_method_io.png` |
+| `OE4_Extension.py` | `results/extension_ablations.csv`, `per_person_cues.csv`, `why_cube.csv`, `cube_model_weights.csv`, `fig_extension.png` |
+| `results/00_written_before_exploring.md` | draft question and hypothesis, written before any method was tried |
+| `results/01_final_choice_before_test.md` | which attempt was chosen, written before the test set was run |
+| `OE_Report_Draft.docx` | draft of the four report pages |
+
+### How it works, in short
+
+- **Grips.** Skin-coloured pixels give the hand area of each frame. Between grips the hand leaves the frame, so a grip is a stretch where the hand covers more than 4% of the frame for at least 0.8 s. Every clip has exactly 10 grips.
+- **Test set.** All 40 grips of Yik Hui, drawn by lot (seed 2026) before anything was tried. Validation is leave one member out over Ceyhun, Kairi and Shangze.
+- **Measures.** Each grip is compared with the empty scene just before it: hand area, how much of the object is visible and its shape, how high and fast it is lifted.
+- **Final method.** One logistic regression per object: the cube uses hand, object and movement measures, the sponge hand and object measures.
+- **Result.** 30/40 on the test set (75%; guessing reaches 35–65%). Sponge 20/20, cube 10/20.
+- **What the extension shows.** The sponge result comes from the sponge folding (20/20 with the object measures, 10/20 without). On the cube every version calls all of Yik Hui's grips light: the training members show more hand in a firm grip, but Yik Hui's hand covers less of the frame in every grip and no more when gripping firmly. Lift goes up with a firm grip for Ceyhun and Shangze and down for Kairi and Yik Hui, so it does not help either.
+- **Cutting settings.** Chosen by looking at all eight videos (no labels). Yik Hui's clips give 10 grips each under all 45 settings tried (`results/cutting_robustness.csv`), so they did not shape the test set.
+
+### Things to decide or check
+
+- **Who leads which node.** CO = Ceyhun Ozturk: nodes 2, 3, 8 and FinalMethod.py. KS = Kairi Shukla: node 7 and the no-hand check (OE2). SK = Shangze Kong: nodes 5, 6. YN = Yik Hui Ng: nodes 1, 4 and the extension (OE4). Before the viva, each of you runs your own sections and can say why each node was tried, what its validation number was and why it was kept or dropped.
+- **Question and hypothesis.** Drafted before exploring; confirm or replace them as a team.
+- **Setup details.** Done: object on a clear-tape mark at the centre of the view, reach starting from a second mark, focus and exposure locked.
+- **Grip order.** The grips were filmed in blocks, not in random order. The report says so and gives the check (OE2).
+- **AI line and reference.** Same as Tasks 1 and 2. Text from the draft that is kept unchanged needs reference [1].

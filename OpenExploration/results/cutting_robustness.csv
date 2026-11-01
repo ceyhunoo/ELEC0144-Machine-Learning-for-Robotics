@@ -1,0 +1,361 @@
+person,label,hand_on,min_grip_s,min_gap_s,cube,sponge,all_10
+Ceyhun,firm,0.02,0.5,0.2,10,10,True
+Ceyhun,firm,0.02,0.5,0.35,9,10,False
+Ceyhun,firm,0.02,0.5,0.6,2,9,False
+Ceyhun,firm,0.02,0.8,0.2,10,10,True
+Ceyhun,firm,0.02,0.8,0.35,9,10,False
+Ceyhun,firm,0.02,0.8,0.6,2,9,False
+Ceyhun,firm,0.02,1.2,0.2,10,10,True
+Ceyhun,firm,0.02,1.2,0.35,9,10,False
+Ceyhun,firm,0.02,1.2,0.6,2,9,False
+Ceyhun,firm,0.03,0.5,0.2,10,10,True
+Ceyhun,firm,0.03,0.5,0.35,10,10,True
+Ceyhun,firm,0.03,0.5,0.6,2,9,False
+Ceyhun,firm,0.03,0.8,0.2,10,10,True
+Ceyhun,firm,0.03,0.8,0.35,10,10,True
+Ceyhun,firm,0.03,0.8,0.6,2,9,False
+Ceyhun,firm,0.03,1.2,0.2,10,10,True
+Ceyhun,firm,0.03,1.2,0.35,10,10,True
+Ceyhun,firm,0.03,1.2,0.6,2,9,False
+Ceyhun,firm,0.04,0.5,0.2,10,10,True
+Ceyhun,firm,0.04,0.5,0.35,10,10,True
+Ceyhun,firm,0.04,0.5,0.6,4,9,False
+Ceyhun,firm,0.04,0.8,0.2,10,10,True
+Ceyhun,firm,0.04,0.8,0.35,10,10,True
+Ceyhun,firm,0.04,0.8,0.6,4,9,False
+Ceyhun,firm,0.04,1.2,0.2,10,10,True
+Ceyhun,firm,0.04,1.2,0.35,10,10,True
+Ceyhun,firm,0.04,1.2,0.6,4,9,False
+Ceyhun,firm,0.06,0.5,0.2,11,10,False
+Ceyhun,firm,0.06,0.5,0.35,10,10,True
+Ceyhun,firm,0.06,0.5,0.6,6,10,False
+Ceyhun,firm,0.06,0.8,0.2,11,10,False
+Ceyhun,firm,0.06,0.8,0.35,10,10,True
+Ceyhun,firm,0.06,0.8,0.6,6,10,False
+Ceyhun,firm,0.06,1.2,0.2,9,10,False
+Ceyhun,firm,0.06,1.2,0.35,10,10,True
+Ceyhun,firm,0.06,1.2,0.6,6,10,False
+Ceyhun,firm,0.08,0.5,0.2,12,11,False
+Ceyhun,firm,0.08,0.5,0.35,10,10,True
+Ceyhun,firm,0.08,0.5,0.6,8,10,False
+Ceyhun,firm,0.08,0.8,0.2,12,11,False
+Ceyhun,firm,0.08,0.8,0.35,10,10,True
+Ceyhun,firm,0.08,0.8,0.6,8,10,False
+Ceyhun,firm,0.08,1.2,0.2,8,9,False
+Ceyhun,firm,0.08,1.2,0.35,10,10,True
+Ceyhun,firm,0.08,1.2,0.6,8,10,False
+Ceyhun,light,0.02,0.5,0.2,10,10,True
+Ceyhun,light,0.02,0.5,0.35,10,10,True
+Ceyhun,light,0.02,0.5,0.6,10,10,True
+Ceyhun,light,0.02,0.8,0.2,10,10,True
+Ceyhun,light,0.02,0.8,0.35,10,10,True
+Ceyhun,light,0.02,0.8,0.6,10,10,True
+Ceyhun,light,0.02,1.2,0.2,10,10,True
+Ceyhun,light,0.02,1.2,0.35,10,10,True
+Ceyhun,light,0.02,1.2,0.6,10,10,True
+Ceyhun,light,0.03,0.5,0.2,10,10,True
+Ceyhun,light,0.03,0.5,0.35,10,10,True
+Ceyhun,light,0.03,0.5,0.6,10,10,True
+Ceyhun,light,0.03,0.8,0.2,10,10,True
+Ceyhun,light,0.03,0.8,0.35,10,10,True
+Ceyhun,light,0.03,0.8,0.6,10,10,True
+Ceyhun,light,0.03,1.2,0.2,10,10,True
+Ceyhun,light,0.03,1.2,0.35,10,10,True
+Ceyhun,light,0.03,1.2,0.6,10,10,True
+Ceyhun,light,0.04,0.5,0.2,10,10,True
+Ceyhun,light,0.04,0.5,0.35,10,10,True
+Ceyhun,light,0.04,0.5,0.6,10,10,True
+Ceyhun,light,0.04,0.8,0.2,10,10,True
+Ceyhun,light,0.04,0.8,0.35,10,10,True
+Ceyhun,light,0.04,0.8,0.6,10,10,True
+Ceyhun,light,0.04,1.2,0.2,10,10,True
+Ceyhun,light,0.04,1.2,0.35,10,10,True
+Ceyhun,light,0.04,1.2,0.6,10,10,True
+Ceyhun,light,0.06,0.5,0.2,10,10,True
+Ceyhun,light,0.06,0.5,0.35,10,10,True
+Ceyhun,light,0.06,0.5,0.6,10,10,True
+Ceyhun,light,0.06,0.8,0.2,10,10,True
+Ceyhun,light,0.06,0.8,0.35,10,10,True
+Ceyhun,light,0.06,0.8,0.6,10,10,True
+Ceyhun,light,0.06,1.2,0.2,10,10,True
+Ceyhun,light,0.06,1.2,0.35,10,10,True
+Ceyhun,light,0.06,1.2,0.6,10,10,True
+Ceyhun,light,0.08,0.5,0.2,10,10,True
+Ceyhun,light,0.08,0.5,0.35,10,10,True
+Ceyhun,light,0.08,0.5,0.6,10,10,True
+Ceyhun,light,0.08,0.8,0.2,10,10,True
+Ceyhun,light,0.08,0.8,0.35,10,10,True
+Ceyhun,light,0.08,0.8,0.6,10,10,True
+Ceyhun,light,0.08,1.2,0.2,10,10,True
+Ceyhun,light,0.08,1.2,0.35,10,10,True
+Ceyhun,light,0.08,1.2,0.6,10,10,True
+Shangze,firm,0.02,0.5,0.2,11,10,False
+Shangze,firm,0.02,0.5,0.35,9,10,False
+Shangze,firm,0.02,0.5,0.6,5,5,False
+Shangze,firm,0.02,0.8,0.2,11,10,False
+Shangze,firm,0.02,0.8,0.35,9,10,False
+Shangze,firm,0.02,0.8,0.6,5,5,False
+Shangze,firm,0.02,1.2,0.2,9,10,False
+Shangze,firm,0.02,1.2,0.35,9,10,False
+Shangze,firm,0.02,1.2,0.6,5,5,False
+Shangze,firm,0.03,0.5,0.2,11,10,False
+Shangze,firm,0.03,0.5,0.35,10,10,True
+Shangze,firm,0.03,0.5,0.6,7,5,False
+Shangze,firm,0.03,0.8,0.2,11,10,False
+Shangze,firm,0.03,0.8,0.35,10,10,True
+Shangze,firm,0.03,0.8,0.6,7,5,False
+Shangze,firm,0.03,1.2,0.2,9,10,False
+Shangze,firm,0.03,1.2,0.35,10,10,True
+Shangze,firm,0.03,1.2,0.6,7,5,False
+Shangze,firm,0.04,0.5,0.2,11,10,False
+Shangze,firm,0.04,0.5,0.35,10,10,True
+Shangze,firm,0.04,0.5,0.6,8,6,False
+Shangze,firm,0.04,0.8,0.2,11,10,False
+Shangze,firm,0.04,0.8,0.35,10,10,True
+Shangze,firm,0.04,0.8,0.6,8,6,False
+Shangze,firm,0.04,1.2,0.2,9,10,False
+Shangze,firm,0.04,1.2,0.35,10,10,True
+Shangze,firm,0.04,1.2,0.6,8,6,False
+Shangze,firm,0.06,0.5,0.2,12,10,False
+Shangze,firm,0.06,0.5,0.35,11,10,False
+Shangze,firm,0.06,0.5,0.6,10,8,False
+Shangze,firm,0.06,0.8,0.2,11,10,False
+Shangze,firm,0.06,0.8,0.35,10,10,True
+Shangze,firm,0.06,0.8,0.6,10,8,False
+Shangze,firm,0.06,1.2,0.2,8,10,False
+Shangze,firm,0.06,1.2,0.35,9,10,False
+Shangze,firm,0.06,1.2,0.6,10,8,False
+Shangze,firm,0.08,0.5,0.2,13,10,False
+Shangze,firm,0.08,0.5,0.35,12,10,False
+Shangze,firm,0.08,0.5,0.6,10,10,True
+Shangze,firm,0.08,0.8,0.2,12,10,False
+Shangze,firm,0.08,0.8,0.35,11,10,False
+Shangze,firm,0.08,0.8,0.6,10,10,True
+Shangze,firm,0.08,1.2,0.2,7,10,False
+Shangze,firm,0.08,1.2,0.35,8,10,False
+Shangze,firm,0.08,1.2,0.6,10,10,True
+Shangze,light,0.02,0.5,0.2,10,10,True
+Shangze,light,0.02,0.5,0.35,10,9,False
+Shangze,light,0.02,0.5,0.6,9,7,False
+Shangze,light,0.02,0.8,0.2,10,10,True
+Shangze,light,0.02,0.8,0.35,10,9,False
+Shangze,light,0.02,0.8,0.6,9,7,False
+Shangze,light,0.02,1.2,0.2,10,10,True
+Shangze,light,0.02,1.2,0.35,10,9,False
+Shangze,light,0.02,1.2,0.6,9,7,False
+Shangze,light,0.03,0.5,0.2,10,10,True
+Shangze,light,0.03,0.5,0.35,10,9,False
+Shangze,light,0.03,0.5,0.6,10,7,False
+Shangze,light,0.03,0.8,0.2,10,10,True
+Shangze,light,0.03,0.8,0.35,10,9,False
+Shangze,light,0.03,0.8,0.6,10,7,False
+Shangze,light,0.03,1.2,0.2,10,10,True
+Shangze,light,0.03,1.2,0.35,10,9,False
+Shangze,light,0.03,1.2,0.6,10,7,False
+Shangze,light,0.04,0.5,0.2,10,10,True
+Shangze,light,0.04,0.5,0.35,10,10,True
+Shangze,light,0.04,0.5,0.6,10,8,False
+Shangze,light,0.04,0.8,0.2,10,10,True
+Shangze,light,0.04,0.8,0.35,10,10,True
+Shangze,light,0.04,0.8,0.6,10,8,False
+Shangze,light,0.04,1.2,0.2,10,10,True
+Shangze,light,0.04,1.2,0.35,10,10,True
+Shangze,light,0.04,1.2,0.6,10,8,False
+Shangze,light,0.06,0.5,0.2,10,10,True
+Shangze,light,0.06,0.5,0.35,10,10,True
+Shangze,light,0.06,0.5,0.6,10,8,False
+Shangze,light,0.06,0.8,0.2,10,10,True
+Shangze,light,0.06,0.8,0.35,10,10,True
+Shangze,light,0.06,0.8,0.6,10,8,False
+Shangze,light,0.06,1.2,0.2,10,10,True
+Shangze,light,0.06,1.2,0.35,10,10,True
+Shangze,light,0.06,1.2,0.6,10,8,False
+Shangze,light,0.08,0.5,0.2,10,10,True
+Shangze,light,0.08,0.5,0.35,10,10,True
+Shangze,light,0.08,0.5,0.6,10,8,False
+Shangze,light,0.08,0.8,0.2,10,10,True
+Shangze,light,0.08,0.8,0.35,10,10,True
+Shangze,light,0.08,0.8,0.6,10,8,False
+Shangze,light,0.08,1.2,0.2,10,10,True
+Shangze,light,0.08,1.2,0.35,10,10,True
+Shangze,light,0.08,1.2,0.6,10,8,False
+Yik Hui,firm,0.02,0.5,0.2,10,10,True
+Yik Hui,firm,0.02,0.5,0.35,10,10,True
+Yik Hui,firm,0.02,0.5,0.6,10,10,True
+Yik Hui,firm,0.02,0.8,0.2,10,10,True
+Yik Hui,firm,0.02,0.8,0.35,10,10,True
+Yik Hui,firm,0.02,0.8,0.6,10,10,True
+Yik Hui,firm,0.02,1.2,0.2,10,10,True
+Yik Hui,firm,0.02,1.2,0.35,10,10,True
+Yik Hui,firm,0.02,1.2,0.6,10,10,True
+Yik Hui,firm,0.03,0.5,0.2,10,10,True
+Yik Hui,firm,0.03,0.5,0.35,10,10,True
+Yik Hui,firm,0.03,0.5,0.6,10,10,True
+Yik Hui,firm,0.03,0.8,0.2,10,10,True
+Yik Hui,firm,0.03,0.8,0.35,10,10,True
+Yik Hui,firm,0.03,0.8,0.6,10,10,True
+Yik Hui,firm,0.03,1.2,0.2,10,10,True
+Yik Hui,firm,0.03,1.2,0.35,10,10,True
+Yik Hui,firm,0.03,1.2,0.6,10,10,True
+Yik Hui,firm,0.04,0.5,0.2,10,10,True
+Yik Hui,firm,0.04,0.5,0.35,10,10,True
+Yik Hui,firm,0.04,0.5,0.6,10,10,True
+Yik Hui,firm,0.04,0.8,0.2,10,10,True
+Yik Hui,firm,0.04,0.8,0.35,10,10,True
+Yik Hui,firm,0.04,0.8,0.6,10,10,True
+Yik Hui,firm,0.04,1.2,0.2,10,10,True
+Yik Hui,firm,0.04,1.2,0.35,10,10,True
+Yik Hui,firm,0.04,1.2,0.6,10,10,True
+Yik Hui,firm,0.06,0.5,0.2,10,10,True
+Yik Hui,firm,0.06,0.5,0.35,10,10,True
+Yik Hui,firm,0.06,0.5,0.6,10,10,True
+Yik Hui,firm,0.06,0.8,0.2,10,10,True
+Yik Hui,firm,0.06,0.8,0.35,10,10,True
+Yik Hui,firm,0.06,0.8,0.6,10,10,True
+Yik Hui,firm,0.06,1.2,0.2,10,10,True
+Yik Hui,firm,0.06,1.2,0.35,10,10,True
+Yik Hui,firm,0.06,1.2,0.6,10,10,True
+Yik Hui,firm,0.08,0.5,0.2,10,10,True
+Yik Hui,firm,0.08,0.5,0.35,10,10,True
+Yik Hui,firm,0.08,0.5,0.6,10,10,True
+Yik Hui,firm,0.08,0.8,0.2,10,10,True
+Yik Hui,firm,0.08,0.8,0.35,10,10,True
+Yik Hui,firm,0.08,0.8,0.6,10,10,True
+Yik Hui,firm,0.08,1.2,0.2,10,10,True
+Yik Hui,firm,0.08,1.2,0.35,10,10,True
+Yik Hui,firm,0.08,1.2,0.6,10,10,True
+Yik Hui,light,0.02,0.5,0.2,10,10,True
+Yik Hui,light,0.02,0.5,0.35,10,10,True
+Yik Hui,light,0.02,0.5,0.6,10,10,True
+Yik Hui,light,0.02,0.8,0.2,10,10,True
+Yik Hui,light,0.02,0.8,0.35,10,10,True
+Yik Hui,light,0.02,0.8,0.6,10,10,True
+Yik Hui,light,0.02,1.2,0.2,10,10,True
+Yik Hui,light,0.02,1.2,0.35,10,10,True
+Yik Hui,light,0.02,1.2,0.6,10,10,True
+Yik Hui,light,0.03,0.5,0.2,10,10,True
+Yik Hui,light,0.03,0.5,0.35,10,10,True
+Yik Hui,light,0.03,0.5,0.6,10,10,True
+Yik Hui,light,0.03,0.8,0.2,10,10,True
+Yik Hui,light,0.03,0.8,0.35,10,10,True
+Yik Hui,light,0.03,0.8,0.6,10,10,True
+Yik Hui,light,0.03,1.2,0.2,10,10,True
+Yik Hui,light,0.03,1.2,0.35,10,10,True
+Yik Hui,light,0.03,1.2,0.6,10,10,True
+Yik Hui,light,0.04,0.5,0.2,10,10,True
+Yik Hui,light,0.04,0.5,0.35,10,10,True
+Yik Hui,light,0.04,0.5,0.6,10,10,True
+Yik Hui,light,0.04,0.8,0.2,10,10,True
+Yik Hui,light,0.04,0.8,0.35,10,10,True
+Yik Hui,light,0.04,0.8,0.6,10,10,True
+Yik Hui,light,0.04,1.2,0.2,10,10,True
+Yik Hui,light,0.04,1.2,0.35,10,10,True
+Yik Hui,light,0.04,1.2,0.6,10,10,True
+Yik Hui,light,0.06,0.5,0.2,10,10,True
+Yik Hui,light,0.06,0.5,0.35,10,10,True
+Yik Hui,light,0.06,0.5,0.6,10,10,True
+Yik Hui,light,0.06,0.8,0.2,10,10,True
+Yik Hui,light,0.06,0.8,0.35,10,10,True
+Yik Hui,light,0.06,0.8,0.6,10,10,True
+Yik Hui,light,0.06,1.2,0.2,10,10,True
+Yik Hui,light,0.06,1.2,0.35,10,10,True
+Yik Hui,light,0.06,1.2,0.6,10,10,True
+Yik Hui,light,0.08,0.5,0.2,10,10,True
+Yik Hui,light,0.08,0.5,0.35,10,10,True
+Yik Hui,light,0.08,0.5,0.6,10,10,True
+Yik Hui,light,0.08,0.8,0.2,10,10,True
+Yik Hui,light,0.08,0.8,0.35,10,10,True
+Yik Hui,light,0.08,0.8,0.6,10,10,True
+Yik Hui,light,0.08,1.2,0.2,10,10,True
+Yik Hui,light,0.08,1.2,0.35,10,10,True
+Yik Hui,light,0.08,1.2,0.6,10,10,True
+Kairi,firm,0.02,0.5,0.2,10,10,True
+Kairi,firm,0.02,0.5,0.35,10,10,True
+Kairi,firm,0.02,0.5,0.6,10,10,True
+Kairi,firm,0.02,0.8,0.2,10,10,True
+Kairi,firm,0.02,0.8,0.35,10,10,True
+Kairi,firm,0.02,0.8,0.6,10,10,True
+Kairi,firm,0.02,1.2,0.2,10,10,True
+Kairi,firm,0.02,1.2,0.35,10,10,True
+Kairi,firm,0.02,1.2,0.6,10,10,True
+Kairi,firm,0.03,0.5,0.2,10,10,True
+Kairi,firm,0.03,0.5,0.35,10,10,True
+Kairi,firm,0.03,0.5,0.6,10,10,True
+Kairi,firm,0.03,0.8,0.2,10,10,True
+Kairi,firm,0.03,0.8,0.35,10,10,True
+Kairi,firm,0.03,0.8,0.6,10,10,True
+Kairi,firm,0.03,1.2,0.2,10,10,True
+Kairi,firm,0.03,1.2,0.35,10,10,True
+Kairi,firm,0.03,1.2,0.6,10,10,True
+Kairi,firm,0.04,0.5,0.2,10,10,True
+Kairi,firm,0.04,0.5,0.35,10,10,True
+Kairi,firm,0.04,0.5,0.6,10,10,True
+Kairi,firm,0.04,0.8,0.2,10,10,True
+Kairi,firm,0.04,0.8,0.35,10,10,True
+Kairi,firm,0.04,0.8,0.6,10,10,True
+Kairi,firm,0.04,1.2,0.2,10,10,True
+Kairi,firm,0.04,1.2,0.35,10,10,True
+Kairi,firm,0.04,1.2,0.6,10,10,True
+Kairi,firm,0.06,0.5,0.2,10,10,True
+Kairi,firm,0.06,0.5,0.35,10,10,True
+Kairi,firm,0.06,0.5,0.6,10,10,True
+Kairi,firm,0.06,0.8,0.2,10,10,True
+Kairi,firm,0.06,0.8,0.35,10,10,True
+Kairi,firm,0.06,0.8,0.6,10,10,True
+Kairi,firm,0.06,1.2,0.2,10,10,True
+Kairi,firm,0.06,1.2,0.35,10,10,True
+Kairi,firm,0.06,1.2,0.6,10,10,True
+Kairi,firm,0.08,0.5,0.2,10,10,True
+Kairi,firm,0.08,0.5,0.35,10,10,True
+Kairi,firm,0.08,0.5,0.6,10,10,True
+Kairi,firm,0.08,0.8,0.2,10,10,True
+Kairi,firm,0.08,0.8,0.35,10,10,True
+Kairi,firm,0.08,0.8,0.6,10,10,True
+Kairi,firm,0.08,1.2,0.2,10,10,True
+Kairi,firm,0.08,1.2,0.35,10,10,True
+Kairi,firm,0.08,1.2,0.6,10,10,True
+Kairi,light,0.02,0.5,0.2,10,10,True
+Kairi,light,0.02,0.5,0.35,10,10,True
+Kairi,light,0.02,0.5,0.6,10,10,True
+Kairi,light,0.02,0.8,0.2,10,10,True
+Kairi,light,0.02,0.8,0.35,10,10,True
+Kairi,light,0.02,0.8,0.6,10,10,True
+Kairi,light,0.02,1.2,0.2,10,10,True
+Kairi,light,0.02,1.2,0.35,10,10,True
+Kairi,light,0.02,1.2,0.6,10,10,True
+Kairi,light,0.03,0.5,0.2,10,10,True
+Kairi,light,0.03,0.5,0.35,10,10,True
+Kairi,light,0.03,0.5,0.6,10,10,True
+Kairi,light,0.03,0.8,0.2,10,10,True
+Kairi,light,0.03,0.8,0.35,10,10,True
+Kairi,light,0.03,0.8,0.6,10,10,True
+Kairi,light,0.03,1.2,0.2,10,10,True
+Kairi,light,0.03,1.2,0.35,10,10,True
+Kairi,light,0.03,1.2,0.6,10,10,True
+Kairi,light,0.04,0.5,0.2,10,10,True
+Kairi,light,0.04,0.5,0.35,10,10,True
+Kairi,light,0.04,0.5,0.6,10,10,True
+Kairi,light,0.04,0.8,0.2,10,10,True
+Kairi,light,0.04,0.8,0.35,10,10,True
+Kairi,light,0.04,0.8,0.6,10,10,True
+Kairi,light,0.04,1.2,0.2,10,10,True
+Kairi,light,0.04,1.2,0.35,10,10,True
+Kairi,light,0.04,1.2,0.6,10,10,True
+Kairi,light,0.06,0.5,0.2,10,10,True
+Kairi,light,0.06,0.5,0.35,10,10,True
+Kairi,light,0.06,0.5,0.6,10,10,True
+Kairi,light,0.06,0.8,0.2,10,10,True
+Kairi,light,0.06,0.8,0.35,10,10,True
+Kairi,light,0.06,0.8,0.6,10,10,True
+Kairi,light,0.06,1.2,0.2,10,10,True
+Kairi,light,0.06,1.2,0.35,10,10,True
+Kairi,light,0.06,1.2,0.6,10,10,True
+Kairi,light,0.08,0.5,0.2,10,10,True
+Kairi,light,0.08,0.5,0.35,10,10,True
+Kairi,light,0.08,0.5,0.6,10,10,True
+Kairi,light,0.08,0.8,0.2,10,10,True
+Kairi,light,0.08,0.8,0.35,10,10,True
+Kairi,light,0.08,0.8,0.6,10,10,True
+Kairi,light,0.08,1.2,0.2,10,10,True
+Kairi,light,0.08,1.2,0.35,10,10,True
+Kairi,light,0.08,1.2,0.6,10,10,True

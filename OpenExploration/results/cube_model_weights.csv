@@ -1,0 +1,14 @@
+,weight,test_member_sd_from_train_mean
+hand_mean,0.3,-1.16
+hand_max,1.6,-1.92
+hand_std,0.81,-1.03
+vis_min,-0.34,
+vis_mean,-0.28,
+vis_std,0.57,
+sol_min,0.42,
+sol_mean,-0.27,
+lift_max,0.54,
+lift_mean,0.93,
+rise_max,-0.03,
+motion_mean,-0.77,
+motion_max,-1.7,

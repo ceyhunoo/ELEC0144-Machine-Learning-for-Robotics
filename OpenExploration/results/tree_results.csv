@@ -1,0 +1,9 @@
+node,why,features,val,val_cube,val_sponge,val_Ceyhun,val_Kairi,val_Shangze
+1 Hand area,firm grip may wrap more hand round the object,hand_mean hand_max hand_std,0.6333333333333333,0.6166666666666667,0.65,0.725,0.5,0.675
+2 Object area and shape,"firm squeeze deforms the sponge, covers more of the cube",vis_min vis_mean vis_std sol_min sol_mean,0.6166666666666667,0.6333333333333333,0.6,0.6,0.6,0.65
+"3 Object, model per object",from 2: same measure means different things per object,vis_min vis_mean vis_std sol_min sol_mean,0.7083333333333334,0.48333333333333334,0.9333333333333333,0.65,0.75,0.725
+4 + hand area,"from 1, 3: cube needs a hand cue",hand_mean hand_max hand_std vis_min vis_mean vis_std sol_min sol_mean,0.7833333333333333,0.6,0.9666666666666667,0.825,0.75,0.775
+5 + movement,from 4: cube still weak; firm hold may lift differently,hand_mean hand_max hand_std vis_min vis_mean vis_std sol_min sol_mean lift_max lift_mean rise_max motion_mean motion_max,0.8416666666666667,0.7666666666666667,0.9166666666666666,0.925,0.775,0.825
+6 + grip duration,from 5: firm grips last longer; may be take pace,hand_mean hand_max hand_std vis_min vis_mean vis_std sol_min sol_mean lift_max lift_mean rise_max motion_mean motion_max duration_s,0.8416666666666667,0.7833333333333333,0.9,0.9,0.775,0.85
+7 Appearance (PCA),from 3-5: let the model find its own cues,appearance_32x18,0.6833333333333333,0.6833333333333333,0.6833333333333333,0.775,0.5,0.775
+8 Own measures per object,"from 4, 5: movement helps cube, hurts sponge",cube: hand_mean hand_max hand_std vis_min vis_mean vis_std sol_min sol_mean lift_max lift_mean rise_max motion_mean motion_max sponge: hand_mean hand_max hand_std vis_min vis_mean vis_std sol_min sol_mean,0.8666666666666667,0.7666666666666667,0.9666666666666667,0.925,0.775,0.9

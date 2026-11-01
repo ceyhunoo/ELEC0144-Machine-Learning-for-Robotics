@@ -1,0 +1,161 @@
+video,person,label,object,start,end,start_s,end_s,n,grip_id,set
+Ceyhun firm.mp4,Ceyhun,firm,cube,8,45,0.53,3.0,1,Ceyhun-firm-cube-01,train
+Ceyhun firm.mp4,Ceyhun,firm,cube,56,92,3.73,6.13,2,Ceyhun-firm-cube-02,train
+Ceyhun firm.mp4,Ceyhun,firm,cube,100,133,6.67,8.87,3,Ceyhun-firm-cube-03,train
+Ceyhun firm.mp4,Ceyhun,firm,cube,142,177,9.47,11.8,4,Ceyhun-firm-cube-04,train
+Ceyhun firm.mp4,Ceyhun,firm,cube,185,220,12.33,14.67,5,Ceyhun-firm-cube-05,train
+Ceyhun firm.mp4,Ceyhun,firm,cube,228,259,15.2,17.27,6,Ceyhun-firm-cube-06,train
+Ceyhun firm.mp4,Ceyhun,firm,cube,268,299,17.87,19.93,7,Ceyhun-firm-cube-07,train
+Ceyhun firm.mp4,Ceyhun,firm,cube,307,341,20.47,22.73,8,Ceyhun-firm-cube-08,train
+Ceyhun firm.mp4,Ceyhun,firm,cube,348,379,23.2,25.27,9,Ceyhun-firm-cube-09,train
+Ceyhun firm.mp4,Ceyhun,firm,cube,386,417,25.73,27.8,10,Ceyhun-firm-cube-10,train
+Ceyhun firm.mp4,Ceyhun,firm,sponge,463,493,30.87,32.87,1,Ceyhun-firm-sponge-01,train
+Ceyhun firm.mp4,Ceyhun,firm,sponge,504,536,33.6,35.73,2,Ceyhun-firm-sponge-02,train
+Ceyhun firm.mp4,Ceyhun,firm,sponge,549,581,36.6,38.73,3,Ceyhun-firm-sponge-03,train
+Ceyhun firm.mp4,Ceyhun,firm,sponge,593,625,39.53,41.67,4,Ceyhun-firm-sponge-04,train
+Ceyhun firm.mp4,Ceyhun,firm,sponge,638,672,42.53,44.8,5,Ceyhun-firm-sponge-05,train
+Ceyhun firm.mp4,Ceyhun,firm,sponge,683,717,45.53,47.8,6,Ceyhun-firm-sponge-06,train
+Ceyhun firm.mp4,Ceyhun,firm,sponge,729,763,48.6,50.87,7,Ceyhun-firm-sponge-07,train
+Ceyhun firm.mp4,Ceyhun,firm,sponge,775,808,51.67,53.87,8,Ceyhun-firm-sponge-08,train
+Ceyhun firm.mp4,Ceyhun,firm,sponge,816,852,54.4,56.8,9,Ceyhun-firm-sponge-09,train
+Ceyhun firm.mp4,Ceyhun,firm,sponge,862,892,57.47,59.47,10,Ceyhun-firm-sponge-10,train
+Ceyhun gentle.mp4,Ceyhun,light,cube,11,38,0.73,2.53,1,Ceyhun-light-cube-01,train
+Ceyhun gentle.mp4,Ceyhun,light,cube,55,90,3.67,6.0,2,Ceyhun-light-cube-02,train
+Ceyhun gentle.mp4,Ceyhun,light,cube,101,133,6.73,8.87,3,Ceyhun-light-cube-03,train
+Ceyhun gentle.mp4,Ceyhun,light,cube,145,170,9.67,11.33,4,Ceyhun-light-cube-04,train
+Ceyhun gentle.mp4,Ceyhun,light,cube,186,213,12.4,14.2,5,Ceyhun-light-cube-05,train
+Ceyhun gentle.mp4,Ceyhun,light,cube,228,255,15.2,17.0,6,Ceyhun-light-cube-06,train
+Ceyhun gentle.mp4,Ceyhun,light,cube,269,298,17.93,19.87,7,Ceyhun-light-cube-07,train
+Ceyhun gentle.mp4,Ceyhun,light,cube,312,346,20.8,23.07,8,Ceyhun-light-cube-08,train
+Ceyhun gentle.mp4,Ceyhun,light,cube,359,390,23.93,26.0,9,Ceyhun-light-cube-09,train
+Ceyhun gentle.mp4,Ceyhun,light,cube,403,432,26.87,28.8,10,Ceyhun-light-cube-10,train
+Ceyhun gentle.mp4,Ceyhun,light,sponge,473,508,31.53,33.87,1,Ceyhun-light-sponge-01,train
+Ceyhun gentle.mp4,Ceyhun,light,sponge,520,547,34.67,36.47,2,Ceyhun-light-sponge-02,train
+Ceyhun gentle.mp4,Ceyhun,light,sponge,560,588,37.33,39.2,3,Ceyhun-light-sponge-03,train
+Ceyhun gentle.mp4,Ceyhun,light,sponge,600,625,40.0,41.67,4,Ceyhun-light-sponge-04,train
+Ceyhun gentle.mp4,Ceyhun,light,sponge,637,664,42.47,44.27,5,Ceyhun-light-sponge-05,train
+Ceyhun gentle.mp4,Ceyhun,light,sponge,677,704,45.13,46.93,6,Ceyhun-light-sponge-06,train
+Ceyhun gentle.mp4,Ceyhun,light,sponge,717,742,47.8,49.47,7,Ceyhun-light-sponge-07,train
+Ceyhun gentle.mp4,Ceyhun,light,sponge,755,783,50.33,52.2,8,Ceyhun-light-sponge-08,train
+Ceyhun gentle.mp4,Ceyhun,light,sponge,798,823,53.2,54.87,9,Ceyhun-light-sponge-09,train
+Ceyhun gentle.mp4,Ceyhun,light,sponge,837,862,55.8,57.47,10,Ceyhun-light-sponge-10,train
+Shangze firm.mp4,Shangze,firm,cube,0,33,0.0,2.2,1,Shangze-firm-cube-01,train
+Shangze firm.mp4,Shangze,firm,cube,47,82,3.13,5.47,2,Shangze-firm-cube-02,train
+Shangze firm.mp4,Shangze,firm,cube,93,127,6.2,8.47,3,Shangze-firm-cube-03,train
+Shangze firm.mp4,Shangze,firm,cube,136,170,9.07,11.33,4,Shangze-firm-cube-04,train
+Shangze firm.mp4,Shangze,firm,cube,177,214,11.8,14.27,5,Shangze-firm-cube-05,train
+Shangze firm.mp4,Shangze,firm,cube,227,259,15.13,17.27,6,Shangze-firm-cube-06,train
+Shangze firm.mp4,Shangze,firm,cube,269,306,17.93,20.4,7,Shangze-firm-cube-07,train
+Shangze firm.mp4,Shangze,firm,cube,313,348,20.87,23.2,8,Shangze-firm-cube-08,train
+Shangze firm.mp4,Shangze,firm,cube,357,388,23.8,25.87,9,Shangze-firm-cube-09,train
+Shangze firm.mp4,Shangze,firm,cube,398,436,26.53,29.07,10,Shangze-firm-cube-10,train
+Shangze firm.mp4,Shangze,firm,sponge,459,494,30.6,32.93,1,Shangze-firm-sponge-01,train
+Shangze firm.mp4,Shangze,firm,sponge,501,529,33.4,35.27,2,Shangze-firm-sponge-02,train
+Shangze firm.mp4,Shangze,firm,sponge,536,563,35.73,37.53,3,Shangze-firm-sponge-03,train
+Shangze firm.mp4,Shangze,firm,sponge,572,600,38.13,40.0,4,Shangze-firm-sponge-04,train
+Shangze firm.mp4,Shangze,firm,sponge,608,634,40.53,42.27,5,Shangze-firm-sponge-05,train
+Shangze firm.mp4,Shangze,firm,sponge,643,670,42.87,44.67,6,Shangze-firm-sponge-06,train
+Shangze firm.mp4,Shangze,firm,sponge,680,706,45.33,47.07,7,Shangze-firm-sponge-07,train
+Shangze firm.mp4,Shangze,firm,sponge,715,740,47.67,49.33,8,Shangze-firm-sponge-08,train
+Shangze firm.mp4,Shangze,firm,sponge,750,776,50.0,51.73,9,Shangze-firm-sponge-09,train
+Shangze firm.mp4,Shangze,firm,sponge,784,805,52.27,53.67,10,Shangze-firm-sponge-10,train
+Shangze gentle.mp4,Shangze,light,cube,0,28,0.0,1.87,1,Shangze-light-cube-01,train
+Shangze gentle.mp4,Shangze,light,cube,38,71,2.53,4.73,2,Shangze-light-cube-02,train
+Shangze gentle.mp4,Shangze,light,cube,82,114,5.47,7.6,3,Shangze-light-cube-03,train
+Shangze gentle.mp4,Shangze,light,cube,123,153,8.2,10.2,4,Shangze-light-cube-04,train
+Shangze gentle.mp4,Shangze,light,cube,164,191,10.93,12.73,5,Shangze-light-cube-05,train
+Shangze gentle.mp4,Shangze,light,cube,202,229,13.47,15.27,6,Shangze-light-cube-06,train
+Shangze gentle.mp4,Shangze,light,cube,240,264,16.0,17.6,7,Shangze-light-cube-07,train
+Shangze gentle.mp4,Shangze,light,cube,277,304,18.47,20.27,8,Shangze-light-cube-08,train
+Shangze gentle.mp4,Shangze,light,cube,313,337,20.87,22.47,9,Shangze-light-cube-09,train
+Shangze gentle.mp4,Shangze,light,cube,347,374,23.13,24.93,10,Shangze-light-cube-10,train
+Shangze gentle.mp4,Shangze,light,sponge,389,414,25.93,27.6,1,Shangze-light-sponge-01,train
+Shangze gentle.mp4,Shangze,light,sponge,420,447,28.0,29.8,2,Shangze-light-sponge-02,train
+Shangze gentle.mp4,Shangze,light,sponge,454,477,30.27,31.8,3,Shangze-light-sponge-03,train
+Shangze gentle.mp4,Shangze,light,sponge,486,509,32.4,33.93,4,Shangze-light-sponge-04,train
+Shangze gentle.mp4,Shangze,light,sponge,519,543,34.6,36.2,5,Shangze-light-sponge-05,train
+Shangze gentle.mp4,Shangze,light,sponge,554,575,36.93,38.33,6,Shangze-light-sponge-06,train
+Shangze gentle.mp4,Shangze,light,sponge,586,611,39.07,40.73,7,Shangze-light-sponge-07,train
+Shangze gentle.mp4,Shangze,light,sponge,623,645,41.53,43.0,8,Shangze-light-sponge-08,train
+Shangze gentle.mp4,Shangze,light,sponge,657,680,43.8,45.33,9,Shangze-light-sponge-09,train
+Shangze gentle.mp4,Shangze,light,sponge,691,713,46.07,47.53,10,Shangze-light-sponge-10,train
+Yikhui firm.mp4,Yik Hui,firm,cube,6,33,0.4,2.2,1,Yik Hui-firm-cube-01,test
+Yikhui firm.mp4,Yik Hui,firm,cube,47,81,3.13,5.4,2,Yik Hui-firm-cube-02,test
+Yikhui firm.mp4,Yik Hui,firm,cube,95,125,6.33,8.33,3,Yik Hui-firm-cube-03,test
+Yikhui firm.mp4,Yik Hui,firm,cube,141,170,9.4,11.33,4,Yik Hui-firm-cube-04,test
+Yikhui firm.mp4,Yik Hui,firm,cube,188,216,12.53,14.4,5,Yik Hui-firm-cube-05,test
+Yikhui firm.mp4,Yik Hui,firm,cube,233,262,15.53,17.47,6,Yik Hui-firm-cube-06,test
+Yikhui firm.mp4,Yik Hui,firm,cube,279,309,18.6,20.6,7,Yik Hui-firm-cube-07,test
+Yikhui firm.mp4,Yik Hui,firm,cube,326,354,21.73,23.6,8,Yik Hui-firm-cube-08,test
+Yikhui firm.mp4,Yik Hui,firm,cube,374,400,24.93,26.67,9,Yik Hui-firm-cube-09,test
+Yikhui firm.mp4,Yik Hui,firm,cube,417,445,27.8,29.67,10,Yik Hui-firm-cube-10,test
+Yikhui firm.mp4,Yik Hui,firm,sponge,460,488,30.67,32.53,1,Yik Hui-firm-sponge-01,test
+Yikhui firm.mp4,Yik Hui,firm,sponge,505,534,33.67,35.6,2,Yik Hui-firm-sponge-02,test
+Yikhui firm.mp4,Yik Hui,firm,sponge,550,577,36.67,38.47,3,Yik Hui-firm-sponge-03,test
+Yikhui firm.mp4,Yik Hui,firm,sponge,596,624,39.73,41.6,4,Yik Hui-firm-sponge-04,test
+Yikhui firm.mp4,Yik Hui,firm,sponge,645,674,43.0,44.93,5,Yik Hui-firm-sponge-05,test
+Yikhui firm.mp4,Yik Hui,firm,sponge,692,719,46.13,47.93,6,Yik Hui-firm-sponge-06,test
+Yikhui firm.mp4,Yik Hui,firm,sponge,740,766,49.33,51.07,7,Yik Hui-firm-sponge-07,test
+Yikhui firm.mp4,Yik Hui,firm,sponge,787,812,52.47,54.13,8,Yik Hui-firm-sponge-08,test
+Yikhui firm.mp4,Yik Hui,firm,sponge,834,856,55.6,57.07,9,Yik Hui-firm-sponge-09,test
+Yikhui firm.mp4,Yik Hui,firm,sponge,875,901,58.33,60.07,10,Yik Hui-firm-sponge-10,test
+Yikhui gentle.mp4,Yik Hui,light,cube,3,28,0.2,1.87,1,Yik Hui-light-cube-01,test
+Yikhui gentle.mp4,Yik Hui,light,cube,40,66,2.67,4.4,2,Yik Hui-light-cube-02,test
+Yikhui gentle.mp4,Yik Hui,light,cube,83,108,5.53,7.2,3,Yik Hui-light-cube-03,test
+Yikhui gentle.mp4,Yik Hui,light,cube,128,156,8.53,10.4,4,Yik Hui-light-cube-04,test
+Yikhui gentle.mp4,Yik Hui,light,cube,178,205,11.87,13.67,5,Yik Hui-light-cube-05,test
+Yikhui gentle.mp4,Yik Hui,light,cube,228,253,15.2,16.87,6,Yik Hui-light-cube-06,test
+Yikhui gentle.mp4,Yik Hui,light,cube,275,300,18.33,20.0,7,Yik Hui-light-cube-07,test
+Yikhui gentle.mp4,Yik Hui,light,cube,319,345,21.27,23.0,8,Yik Hui-light-cube-08,test
+Yikhui gentle.mp4,Yik Hui,light,cube,365,394,24.33,26.27,9,Yik Hui-light-cube-09,test
+Yikhui gentle.mp4,Yik Hui,light,cube,413,438,27.53,29.2,10,Yik Hui-light-cube-10,test
+Yikhui gentle.mp4,Yik Hui,light,sponge,455,477,30.33,31.8,1,Yik Hui-light-sponge-01,test
+Yikhui gentle.mp4,Yik Hui,light,sponge,494,518,32.93,34.53,2,Yik Hui-light-sponge-02,test
+Yikhui gentle.mp4,Yik Hui,light,sponge,538,560,35.87,37.33,3,Yik Hui-light-sponge-03,test
+Yikhui gentle.mp4,Yik Hui,light,sponge,583,605,38.87,40.33,4,Yik Hui-light-sponge-04,test
+Yikhui gentle.mp4,Yik Hui,light,sponge,625,647,41.67,43.13,5,Yik Hui-light-sponge-05,test
+Yikhui gentle.mp4,Yik Hui,light,sponge,668,692,44.53,46.13,6,Yik Hui-light-sponge-06,test
+Yikhui gentle.mp4,Yik Hui,light,sponge,712,738,47.47,49.2,7,Yik Hui-light-sponge-07,test
+Yikhui gentle.mp4,Yik Hui,light,sponge,760,784,50.67,52.27,8,Yik Hui-light-sponge-08,test
+Yikhui gentle.mp4,Yik Hui,light,sponge,806,830,53.73,55.33,9,Yik Hui-light-sponge-09,test
+Yikhui gentle.mp4,Yik Hui,light,sponge,849,870,56.6,58.0,10,Yik Hui-light-sponge-10,test
+20261029_131159 firm k.mp4,Kairi,firm,cube,10,56,0.67,3.73,1,Kairi-firm-cube-01,train
+20261029_131159 firm k.mp4,Kairi,firm,cube,76,112,5.07,7.47,2,Kairi-firm-cube-02,train
+20261029_131159 firm k.mp4,Kairi,firm,cube,134,167,8.93,11.13,3,Kairi-firm-cube-03,train
+20261029_131159 firm k.mp4,Kairi,firm,cube,187,219,12.47,14.6,4,Kairi-firm-cube-04,train
+20261029_131159 firm k.mp4,Kairi,firm,cube,239,268,15.93,17.87,5,Kairi-firm-cube-05,train
+20261029_131159 firm k.mp4,Kairi,firm,cube,287,317,19.13,21.13,6,Kairi-firm-cube-06,train
+20261029_131159 firm k.mp4,Kairi,firm,cube,336,365,22.4,24.33,7,Kairi-firm-cube-07,train
+20261029_131159 firm k.mp4,Kairi,firm,cube,385,414,25.67,27.6,8,Kairi-firm-cube-08,train
+20261029_131159 firm k.mp4,Kairi,firm,cube,435,465,29.0,31.0,9,Kairi-firm-cube-09,train
+20261029_131159 firm k.mp4,Kairi,firm,cube,486,518,32.4,34.53,10,Kairi-firm-cube-10,train
+20261029_131159 firm k.mp4,Kairi,firm,sponge,541,579,36.07,38.6,1,Kairi-firm-sponge-01,train
+20261029_131159 firm k.mp4,Kairi,firm,sponge,596,632,39.73,42.13,2,Kairi-firm-sponge-02,train
+20261029_131159 firm k.mp4,Kairi,firm,sponge,649,684,43.27,45.6,3,Kairi-firm-sponge-03,train
+20261029_131159 firm k.mp4,Kairi,firm,sponge,700,733,46.67,48.87,4,Kairi-firm-sponge-04,train
+20261029_131159 firm k.mp4,Kairi,firm,sponge,750,783,50.0,52.2,5,Kairi-firm-sponge-05,train
+20261029_131159 firm k.mp4,Kairi,firm,sponge,799,835,53.27,55.67,6,Kairi-firm-sponge-06,train
+20261029_131159 firm k.mp4,Kairi,firm,sponge,852,887,56.8,59.13,7,Kairi-firm-sponge-07,train
+20261029_131159 firm k.mp4,Kairi,firm,sponge,904,934,60.27,62.27,8,Kairi-firm-sponge-08,train
+20261029_131159 firm k.mp4,Kairi,firm,sponge,951,985,63.4,65.67,9,Kairi-firm-sponge-09,train
+20261029_131159 firm k.mp4,Kairi,firm,sponge,1002,1039,66.8,69.27,10,Kairi-firm-sponge-10,train
+20261029_131437 gentle K.mp4,Kairi,light,cube,7,39,0.47,2.6,1,Kairi-light-cube-01,train
+20261029_131437 gentle K.mp4,Kairi,light,cube,57,88,3.8,5.87,2,Kairi-light-cube-02,train
+20261029_131437 gentle K.mp4,Kairi,light,cube,104,139,6.93,9.27,3,Kairi-light-cube-03,train
+20261029_131437 gentle K.mp4,Kairi,light,cube,157,187,10.47,12.47,4,Kairi-light-cube-04,train
+20261029_131437 gentle K.mp4,Kairi,light,cube,205,233,13.67,15.53,5,Kairi-light-cube-05,train
+20261029_131437 gentle K.mp4,Kairi,light,cube,252,282,16.8,18.8,6,Kairi-light-cube-06,train
+20261029_131437 gentle K.mp4,Kairi,light,cube,300,325,20.0,21.67,7,Kairi-light-cube-07,train
+20261029_131437 gentle K.mp4,Kairi,light,cube,342,366,22.8,24.4,8,Kairi-light-cube-08,train
+20261029_131437 gentle K.mp4,Kairi,light,cube,383,410,25.53,27.33,9,Kairi-light-cube-09,train
+20261029_131437 gentle K.mp4,Kairi,light,cube,429,457,28.6,30.47,10,Kairi-light-cube-10,train
+20261029_131437 gentle K.mp4,Kairi,light,sponge,478,503,31.87,33.53,1,Kairi-light-sponge-01,train
+20261029_131437 gentle K.mp4,Kairi,light,sponge,521,550,34.73,36.67,2,Kairi-light-sponge-02,train
+20261029_131437 gentle K.mp4,Kairi,light,sponge,570,597,38.0,39.8,3,Kairi-light-sponge-03,train
+20261029_131437 gentle K.mp4,Kairi,light,sponge,613,637,40.87,42.47,4,Kairi-light-sponge-04,train
+20261029_131437 gentle K.mp4,Kairi,light,sponge,653,676,43.53,45.07,5,Kairi-light-sponge-05,train
+20261029_131437 gentle K.mp4,Kairi,light,sponge,692,717,46.13,47.8,6,Kairi-light-sponge-06,train
+20261029_131437 gentle K.mp4,Kairi,light,sponge,731,755,48.73,50.33,7,Kairi-light-sponge-07,train
+20261029_131437 gentle K.mp4,Kairi,light,sponge,771,794,51.4,52.93,8,Kairi-light-sponge-08,train
+20261029_131437 gentle K.mp4,Kairi,light,sponge,810,835,54.0,55.67,9,Kairi-light-sponge-09,train
+20261029_131437 gentle K.mp4,Kairi,light,sponge,851,877,56.73,58.47,10,Kairi-light-sponge-10,train

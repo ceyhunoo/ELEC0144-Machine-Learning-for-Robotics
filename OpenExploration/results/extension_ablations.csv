@@ -1,0 +1,6 @@
+version,test,cube,sponge,unit,cube_called_firm,sponge_called_firm
+Final method,0.75,0.5,1.0,40 grips,0.0,10.0
+Without movement,0.75,0.5,1.0,40 grips,0.0,10.0
+"Hand hidden (no hand, no motion)",0.75,0.5,1.0,40 grips,0.0,10.0
+"Object hidden (no object, no lift)",0.5,0.5,0.5,40 grips,0.0,0.0
+Hand and object hidden (scene only),0.5121951219512195,0.5238095238095238,0.5,41 gaps,,

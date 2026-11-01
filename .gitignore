@@ -1,1 +1,4 @@
 .venv/
+open exploration videos/
+OpenExploration/cache/
+__pycache__/

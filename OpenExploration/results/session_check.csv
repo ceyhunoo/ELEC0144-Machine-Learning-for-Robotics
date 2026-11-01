@@ -1,0 +1,5 @@
+features,test,accuracy,per_member
+whole frame,across people (leave one member out),0.367,"Ceyhun 48%, Kairi 21%, Shangze 41%"
+whole frame,within a person (half the gaps each),0.977,-
+table only (object area left out),across people (leave one member out),0.451,"Ceyhun 50%, Kairi 24%, Shangze 62%"
+table only (object area left out),within a person (half the gaps each),0.961,-

@@ -1,0 +1,11 @@
+,,lift_max,lift_max,vis_min,vis_min,hand_max,hand_max
+label,,firm,light,firm,light,firm,light
+object,person,,,,,,
+cube,Ceyhun,1.052,0.679,0.797,0.811,0.195,0.186
+cube,Kairi,0.133,0.463,0.69,0.819,0.199,0.17
+cube,Shangze,0.951,0.522,0.682,0.891,0.184,0.173
+cube,Yik Hui,0.354,0.593,0.899,0.881,0.158,0.161
+sponge,Ceyhun,1.539,0.93,0.336,0.56,0.206,0.191
+sponge,Kairi,0.994,1.643,0.249,0.694,0.201,0.168
+sponge,Shangze,0.787,0.596,0.413,0.623,0.202,0.191
+sponge,Yik Hui,0.729,1.281,0.309,0.821,0.173,0.161
