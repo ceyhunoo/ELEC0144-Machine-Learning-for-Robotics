@@ -217,6 +217,9 @@ Next step: run it, read it next to the table above, and ask about any line you c
 
 ## SECTION C
 
+### Further Explanation
+https://claude.ai/artifact/3oCxWAyf7cTeCtiYcLJfQy
+
 ### Open Exploration: running the code
 
 The videos go in `open exploration videos/` (next to this README, not in git). After `uv sync`, from the `OpenExploration` folder:
