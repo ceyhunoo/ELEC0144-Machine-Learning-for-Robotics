@@ -156,7 +156,7 @@ def largest_blob(mask: np.ndarray):
     return area, area / hull if hull > 0 else np.nan, cent[k, 1], stats[k, cv2.CC_STAT_HEIGHT]
 
 
-APPEAR_W, APPEAR_H = 32, 18     # size of the difference image used as "appearance" (attempt 5)
+APPEAR_W, APPEAR_H = 32, 18     # size of the difference image used as "appearance" (attempt 7)
 
 
 def grip_features(frames: np.ndarray, ref: np.ndarray, obj: str) -> tuple:

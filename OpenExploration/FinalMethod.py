@@ -101,34 +101,39 @@ print('\nWrong grips:\n', wrong[['grip_id', 'firm_score', 'start_s']].to_string(
 
 # %% Figure
 # For one firm and one light grip of each object: five frames (input), two of the measured
-# curves, and the firm score (output).
+# curves, and the firm score (output). Sized for the report (about 17 cm wide), text about 6-7 pt.
+plt.rcParams.update({'font.size': 6.5})
 examples = [test[(test.object == o) & (test.label == l)].iloc[4] for o in ('sponge', 'cube') for l in ('firm', 'light')]
-fig, axs = plt.subplots(4, 7, figsize=(11, 5.6),
-                        gridspec_kw=dict(width_ratios=[1, 1, 1, 1, 1, 1.5, 0.6]))
+fig, axs = plt.subplots(4, 7, figsize=(7.2, 3.9),
+                        gridspec_kw=dict(width_ratios=[1, 1, 1, 1, 1, 1.6, 0.65]))
 for r, row in enumerate(examples):
     frames = read_frames(row.video)[row.start:row.end]
     for c, i in enumerate(np.linspace(0, len(frames) - 1, 5).astype(int)):
         axs[r, c].imshow(frames[i][15:165, 90:320])
         axs[r, c].set_xticks([]); axs[r, c].set_yticks([])
         if r == 0:
-            axs[r, c].set_title(f'{i / FPS:.1f} s', fontsize=8)
-    axs[r, 0].set_ylabel(f'{row.object}\n{row.label}', fontsize=8)
+            axs[r, c].set_title(f'{i / FPS:.1f} s', fontsize=6.5)
+    axs[r, 0].set_ylabel(f'{row.object}\n{row.label}', fontsize=6.5)
     t = np.arange(len(frames)) / FPS
     om = object_mask(frames, row.object).mean(axis=(1, 2))
-    axs[r, 5].plot(t, hand_mask(frames).mean(axis=(1, 2)), label='hand area')
-    axs[r, 5].plot(t, om / om[:3].mean() * 0.1, label='object area (scaled)')
-    axs[r, 5].set_ylim(0, 0.25); axs[r, 5].tick_params(labelsize=7)
+    axs[r, 5].plot(t, hand_mask(frames).mean(axis=(1, 2)), lw=0.9, label='hand (fraction of frame)')
+    axs[r, 5].plot(t, om / om[:3].mean() * 0.1, lw=0.9, label='object, scaled (0.1 = grip start)')
+    axs[r, 5].set_ylim(0, 0.25); axs[r, 5].tick_params(labelsize=5.5)
+    axs[r, 5].set_ylabel('area', fontsize=6)
     if r == 0:
-        axs[r, 5].legend(fontsize=6, loc='lower center'); axs[r, 5].set_title('measured', fontsize=8)
+        axs[r, 5].set_title('measured', fontsize=6.5)
     if r == 3:
-        axs[r, 5].set_xlabel('time in grip (s)', fontsize=8)
+        axs[r, 5].set_xlabel('time in grip (s)', fontsize=6)
     s = firm_score[test.index[test.grip_id == row.grip_id][0]]
     axs[r, 6].bar([0], [s], color='C3' if s > 0.5 else 'C0'); axs[r, 6].axhline(0.5, color='k', lw=0.6, ls=':')
-    axs[r, 6].set_ylim(0, 1); axs[r, 6].set_xticks([]); axs[r, 6].tick_params(labelsize=7)
-    axs[r, 6].text(0, min(s + 0.05, 0.9), f'{s:.2f}', ha='center', fontsize=7)
+    axs[r, 6].set_ylim(0, 1); axs[r, 6].set_xticks([]); axs[r, 6].tick_params(labelsize=5.5)
+    axs[r, 6].set_ylabel('firm score', fontsize=6)
+    axs[r, 6].text(0, min(s + 0.05, 0.85), f'{s:.2f}', ha='center', fontsize=6)
     if r == 0:
-        axs[r, 6].set_title('firm score', fontsize=8)
-fig.suptitle(f'Final method on four test grips ({test.person.iloc[0]}): input frames, measured curves, output', fontsize=9)
-fig.tight_layout()
-fig.savefig(RESULTS_DIR / 'fig_final_method_io.png', dpi=150)
+        axs[r, 6].set_title('output', fontsize=6.5)
+fig.suptitle(f'Final method on four test grips ({test.person.iloc[0]}): input frames, measured curves, output', fontsize=7)
+handles, labels = axs[0, 5].get_legend_handles_labels()
+fig.legend(handles, labels, loc='lower left', ncol=2, fontsize=6, frameon=False, bbox_to_anchor=(0.01, 0.0))
+fig.tight_layout(pad=0.3, h_pad=0.4, w_pad=0.3, rect=(0, 0.05, 1, 1))
+fig.savefig(RESULTS_DIR / 'fig_final_method_io.png', dpi=300)
 print('\nFigure saved:', RESULTS_DIR / 'fig_final_method_io.png')

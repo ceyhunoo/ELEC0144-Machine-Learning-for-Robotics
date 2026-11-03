@@ -123,16 +123,18 @@ pd.concat([coef.rename('weight'), z.rename('test_member_sd_from_train_mean')], a
 
 
 # %% Figure
-fig, axs = plt.subplots(2, 2, figsize=(9, 6.2))
+# Sized for the report (about 14 cm wide), so the text prints at about 6-7 pt.
+plt.rcParams.update({'font.size': 6.5})
+fig, axs = plt.subplots(2, 2, figsize=(6.4, 4.3))
 ax = axs[0, 0]
 x = np.arange(len(abl))
 ax.axhspan(0.35, 0.65, color='grey', alpha=0.15, label='guessing, 95% range (40 grips)')
 ax.bar(x - 0.2, abl.cube, 0.4, label='cube', color='C2')
 ax.bar(x + 0.2, abl.sponge, 0.4, label='sponge', color='C1')
-ax.set_xticks(x, ['Final', 'No\nmovement', 'Hand\nhidden', 'Object\nhidden', 'Scene\nonly'], fontsize=8)
-ax.set_ylim(0, 1.3); ax.set_yticks(np.arange(0, 1.01, 0.2)); ax.set_ylabel(f'test accuracy ({test_person})', fontsize=9)
-ax.set_title('(a) Ablations on the test member', fontsize=9)
-ax.legend(fontsize=7, loc='upper center', ncol=3, handlelength=1.2, columnspacing=0.8)
+ax.set_xticks(x, ['Final', 'No\nmovement', 'Hand\nhidden', 'Object\nhidden', 'Scene\nonly'], fontsize=6.5)
+ax.set_ylim(0, 1.3); ax.set_yticks(np.arange(0, 1.01, 0.2)); ax.set_ylabel(f'test accuracy ({test_person})', fontsize=6.5)
+ax.set_title('(a) Ablations on the test member', fontsize=7)
+ax.legend(fontsize=5.5, loc='upper center', ncol=3, handlelength=1.2, columnspacing=0.8)
 people = sorted(train.person.unique()) + [test_person]
 panels = [(axs[0, 1], 'cube', 'hand_max', 'largest hand area\n(fraction of the frame)', '(b) Cube: hand area'),
           (axs[1, 0], 'cube', 'lift_max', 'highest lift (object heights)', '(c) Cube: lift'),
@@ -142,10 +144,10 @@ for ax, obj, col, ylab, title in panels:
     for j, p in enumerate(people):
         for lab, dx, c in (('light', -0.15, 'C0'), ('firm', 0.15, 'C3')):
             v = sub[(sub.person == p) & (sub.label == lab)][col]
-            ax.scatter(np.full(len(v), j + dx), v, s=8, color=c, alpha=0.6, label=lab if j == 0 else None)
-    ax.set_xticks(range(len(people)), [p + ('\n(test)' if p == test_person else '') for p in people], fontsize=8)
-    ax.set_ylabel(ylab, fontsize=8); ax.set_title(title + ', one dot per grip', fontsize=9)
-    ax.legend(fontsize=7)
-fig.tight_layout()
-fig.savefig(RESULTS_DIR / 'fig_extension.png', dpi=150)
+            ax.scatter(np.full(len(v), j + dx), v, s=5, color=c, alpha=0.6, label=lab if j == 0 else None)
+    ax.set_xticks(range(len(people)), [p + ('\n(test)' if p == test_person else '') for p in people], fontsize=6.5)
+    ax.set_ylabel(ylab, fontsize=6.5); ax.set_title(title + ', one dot per grip', fontsize=7)
+    ax.legend(fontsize=5.5)
+fig.tight_layout(pad=0.4)
+fig.savefig(RESULTS_DIR / 'fig_extension.png', dpi=300)
 print('Figure saved:', RESULTS_DIR / 'fig_extension.png')

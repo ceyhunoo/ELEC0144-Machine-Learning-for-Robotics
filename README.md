@@ -1,19 +1,70 @@
 # ELEC0144-Machine-Learning-for-Robotics
 
+Team 10's working repo for ELEC0144 Part I. This README is for the team; the assessor gets
+`SUBMISSION_README.md`, copied into the submission folder as its README.
+
+## Two folders: this repo and the submission folder
+
+- **This repo** (GitHub) holds everything: code, notes, drafts, ThresholdHistograms.py.
+- **`ELEC0144_Team10_submission/`** holds only what goes to Moodle. It is not in git (.gitignore). Don't edit
+  files in it: `bash build_submission.sh` copies the code, data and results into it from this repo every time it
+  runs. Export the two PDFs from Word straight into it:
+  - `ELEC0144_Report_Final_Draft.docx` → `ELEC0144_Team10_submission/ELEC0144_Team10_Report.pdf`
+  - `SelfAssessment_Team10.docx` → `ELEC0144_Team10_submission/SelfAssessment_Team10.pdf`
+
+  Then run `bash build_submission.sh` again: it builds `ELEC0144_Team10_submission.zip`, the file to upload.
+  Left out of the submission on purpose: videos, cache, .venv, ThresholdHistograms.py (hand-drawn outlines),
+  OpenExploration/OE_Report_Draft.docx, the .docx files, the brief and template, "Claude outputs/".
+
+## Viva prep
+
+- **"Why does ADAM go below 0.001 at a different epoch from SGD?"** (one of the brief's example questions).
+  The two runs start from the same weights and see the samples in the same order, but take different steps:
+  - SGD's step is η times the current sample's gradient, so it is big where the gradient is big. The output-layer
+    gradients (about 0.07–0.11 per sample on average in the first 30 epochs) are much larger than the hidden-layer
+    ones (about 0.004–0.03), so W2 and b2 take large steps that change with every sample.
+  - ADAM divides each weight's running mean gradient m̂ by its running RMS gradient √v̂, so a weight's step depends on
+    how consistent its gradient is, not on its size. Measured over the first 30 epochs (1230 updates): ADAM's
+    output-layer steps are about 10 times smaller than SGD's (W2 about 0.0008 against 0.008), its hidden-layer steps
+    about the same or smaller (W1 0.0004–0.0009 against 0.0004–0.0019).
+  - All of ADAM's steps here are far below α = 0.005: with one update per sample the gradients vary in size and sign
+    from sample to sample, so their running mean m̂ is much smaller than their running RMS √v̂. Don't say "ADAM's
+    step is always α"; in this code it isn't.
+  - So the weights follow different paths and reach 0.001 at different epochs: ADAM 151, SGD 188 (seed 1); ADAM
+    141–155, SGD 184–194 over seeds 1–8. Which one is earlier depends on η and α; it is not a general rule.
+- **darkFactor at the viva.** Task1.py is run at 0.8 with mirror = True, which are the submitted settings. Don't edit
+  the line `darkFactor = 0.8 ...`: WhatIf_Task1.py looks for that exact text and stops if it has changed.
+- **"Which equation of your derivation is this line?"** The table in Section B below maps every line of `forward`,
+  `gradients` and `train` to eqs. (1)–(15), the same numbers as Appendix A of the report.
+- **"How did you find this threshold?"** Section A below: histograms first, then one threshold at a time over its
+  working range (recorded in the comment next to each value in Task1.py). ThresholdHistograms.py is not submitted
+  (it contains hand-drawn outlines), but you can describe it.
+- **OE: "Which recordings did your method get most wrong, and why?"** All ten wrong test grips are Yik Hui's firm cube
+  grips (firm scores 0.00–0.22, results/final_test_predictions.csv). The cube model learned "more hand means firm"
+  from the training members, but Yik Hui's largest hand area is about 0.16 of the frame, 1.9 training standard
+  deviations below the training mean, and no larger in firm grips; lift goes opposite ways in different people
+  (report Figure 2b, 2c).
+- **OE: skin colour and cutting settings.** Chosen by looking at all eight videos, without labels. 45 cutting settings
+  (OE1_Grips.py) and 11 skin-colour settings (OE5_SkinCheck.py) all give Yik Hui 10 grips per clip and 30/40 on test.
+- **OE: grip order.** Filmed in blocks, not random. Within one person the takes can be told apart (98%); across
+  people they can't (37%, and 51% on Yik Hui). Every number in the report is across people.
+
 ## Running the code
 
-Run the following command to install dependencies (numpy and matplotlib)
+Install the dependencies with
 ```
 uv sync
 ```
-If it fails, install uv first (Look online on how to do that)
+or, without uv: `pip install numpy pandas matplotlib opencv-python scikit-learn imageio-ffmpeg`
 
 Then, from this folder:
 ```
 uv run python Task1.py
 uv run python Task2.py
+uv run python WhatIf_Task1.py   # What-if 1: darkFactor 1.0 to 0.1; prints Table W1, saves WhatIf_Task1.png
+uv run python WhatIf_Task2.py   # What-if 2: slope of tanh replaced by 1; prints the numbers in the report, saves WhatIf_Task2.png
 ```
-Both files read their data with relative paths, so run them from this folder. Task2.py takes about 15 seconds.
+All four files read their data with relative paths, so run them from this folder. Task2.py takes about 15 seconds, WhatIf_Task1.py about a minute, WhatIf_Task2.py about 40 seconds. Neither What-if file edits Task1.py or Task2.py: each reads the file and runs it with one line changed.
 
 ## SECTION A
 
@@ -77,7 +128,7 @@ To measure box coverage automatically, I drew rough outlines of the three fruits
   - 0.75 is the safer choice, but it's the team's call.
 - **Which fruit is the lemon.** I've taken it to be the big yellow citrus at the top. The yellow-green bits behind the grapes are not boxed.
 - **AI line.** The code map's last line reads "Claude Opus 5.5 (claude.ai), default settings". Check the exact setting your app shows. If the team keeps the code unchanged, it also needs an IEEE reference in the report.
-- **What-if 1.** I haven't run anything below 0.6. Each member's prediction comes first.
+- **What-if 1.** Done: WhatIf_Task1.py runs Task1.py for darkFactor 1.0 to 0.1 in steps of 0.05; no fruit is lost (report, What-if 1).
 
 Next step: run it, read it line by line, and ask about anything you couldn't explain on your own. After that, the team reads it together and holds the What-if prediction meeting.
 
@@ -202,7 +253,7 @@ At x = 0.5 (d = −0.0521) with the given weights:
 - **First epoch below 0.001.** With seed 1, ADAM gets there at epoch 151 and SGD at 188.
   - With seeds 1–8, ADAM is at 141–155 and SGD at 184–194, so the order is not a lucky shuffle.
   - ADAM's final error varies more with the seed, from 0.0003 to 0.0012; seed 3 ends above 0.001.
-  - Why ADAM gets there earlier is a likely viva question. The explanation will be added here once it has been checked.
+  - Why ADAM gets there earlier is a likely viva question: see "Viva prep" near the top of this file.
 
 ### Things to decide or check
 
@@ -211,7 +262,7 @@ At x = 0.5 (d = −0.0521) with the given weights:
 - **Two extras beyond the brief.** The Gradient check section, and ADAM's fit on the left panel (the brief only asks for SGD's). Each is one more thing someone can be asked about. Keep or drop them.
 - **Derivation appendix.** Required, at most 2 pages; a scan of handwritten work is fine. Use the equation numbers above.
 - **AI line.** Same as Task 1: "Claude Opus 5.5 (claude.ai), default settings". Check the exact setting, and add an IEEE reference if the code is kept unchanged.
-- **What-if 2.** The factor to replace is `slope = 1 - a1**2` (eq. 8) in `gradients`. Nothing has been run with it changed. Each member writes their name, prediction and reason first. Then the change goes in a separate file, WhatIf_Task2.py.
+- **What-if 2.** Done: WhatIf_Task2.py runs Task2.py with `slope = 1 - a1**2` (eq. 8) replaced by 1. Both fits become nearly straight lines and both errors end near the best straight line's error, 0.0273 (report, What-if 2).
 
 Next step: run it, read it next to the table above, and ask about any line you couldn't explain on your own. Then the team writes the appendix after the Week 3 lecture and holds the What-if 2 prediction meeting.
 
@@ -230,6 +281,7 @@ uv run python OE2_SessionCheck.py  # can the takes be told apart with no hand in
 uv run python OE3_Explore.py       # the attempts in the tree (training members only)
 uv run python FinalMethod.py       # final method on the test set, prints the result
 uv run python OE4_Extension.py     # Going further B: ablations on the test set
+uv run python OE5_SkinCheck.py     # do the skin-colour bounds shape the test result? (about 10 minutes)
 ```
 Run them in this order. The first run decodes the videos into `OpenExploration/cache/` (about 1.2 GB, about 2 minutes); after that each file takes under a minute. The cache can be deleted at any time and is rebuilt. Every number and figure in the report is written to `OpenExploration/results/`.
 
@@ -243,6 +295,7 @@ Run them in this order. The first run decodes the videos into `OpenExploration/c
 | `OE3_Explore.py` | `results/tree_results.csv`: the validation number of every node |
 | `FinalMethod.py` | `results/final_test_result.csv`, `final_test_predictions.csv`, `fig_final_method_io.png` |
 | `OE4_Extension.py` | `results/extension_ablations.csv`, `per_person_cues.csv`, `why_cube.csv`, `cube_model_weights.csv`, `fig_extension.png` |
+| `OE5_SkinCheck.py` | `results/skin_check.csv`: grips and test result when the skin-colour bounds move |
 | `results/00_written_before_exploring.md` | draft question and hypothesis, written before any method was tried |
 | `results/01_final_choice_before_test.md` | which attempt was chosen, written before the test set was run |
 | `OE_Report_Draft.docx` | draft of the four report pages |
@@ -255,7 +308,7 @@ Run them in this order. The first run decodes the videos into `OpenExploration/c
 - **Final method.** One logistic regression per object: the cube uses hand, object and movement measures, the sponge hand and object measures.
 - **Result.** 30/40 on the test set (75%; guessing reaches 35–65%). Sponge 20/20, cube 10/20.
 - **What the extension shows.** The sponge result comes from the sponge folding (20/20 with the object measures, 10/20 without). On the cube every version calls all of Yik Hui's grips light: the training members show more hand in a firm grip, but Yik Hui's hand covers less of the frame in every grip and no more when gripping firmly. Lift goes up with a firm grip for Ceyhun and Shangze and down for Kairi and Yik Hui, so it does not help either.
-- **Cutting settings.** Chosen by looking at all eight videos (no labels). Yik Hui's clips give 10 grips each under all 45 settings tried (`results/cutting_robustness.csv`), so they did not shape the test set.
+- **Cutting settings and skin colour.** Chosen by looking at all eight videos (no labels). Yik Hui's clips give 10 grips each under all 45 cutting settings tried (`results/cutting_robustness.csv`). With each skin-colour bound moved down or up, or all together (11 settings, fixed before the run; a move that would let the sponge's yellow pass as skin is left out), Yik Hui's clips still give 10 grips each and the test result stays at 30/40 (`OE5_SkinCheck.py`, `results/skin_check.csv`). So neither choice shaped the test result.
 
 ### Things to decide or check
 
