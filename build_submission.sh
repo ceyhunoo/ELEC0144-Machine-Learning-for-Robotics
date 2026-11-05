@@ -39,6 +39,7 @@ if [ "$missing" -ne 0 ]; then
 fi
 
 rm -f "$SUB.zip"
-zip -qrX "$SUB.zip" "$SUB" -x '*.DS_Store'
+# leave out anything created by running the code inside the folder (uv's .venv, caches)
+zip -qrX "$SUB.zip" "$SUB" -x '*.DS_Store' "$SUB/.venv/*" '*__pycache__*' "$SUB/OpenExploration/cache/*" '*.pyc'
 unzip -l "$SUB.zip"
 echo "Built $SUB.zip: this is the file to upload to Moodle."

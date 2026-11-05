@@ -18,6 +18,7 @@ import matplotlib
 matplotlib.use('Agg')                      # Task1.py opens a figure each run; no windows here
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
+plt.show = lambda *args, **kwargs: None    # Task1.py ends with plt.show(); here it only draws, so skip it
 
 DARK_FACTORS = np.round(np.arange(1.0, 0.0999, -0.05), 2)     # 1.0, 0.95, ..., 0.1 (19 values)
 FRUITS = ['apple', 'capsicum', 'lemon']
